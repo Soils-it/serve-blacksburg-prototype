@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Medium-fidelity community service connection prototype for CS 3724 Phase 3.">
+  <title>Serve Blacksburg Prototype</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#app">Skip to main content</a>
+
+  <header class="site-header">
+    <button class="brand" type="button" data-nav="discover" aria-label="Serve Blacksburg home">
+      <span class="brand-mark" aria-hidden="true">SB</span>
+      <span>
+        <strong>Serve Blacksburg</strong>
+        <small>Find your way to help</small>
+      </span>
+    </button>
+
+    <nav class="desktop-nav" aria-label="Primary navigation">
+      <button type="button" data-nav="discover">Discover</button>
+      <button type="button" data-nav="saved">Saved</button>
+      <button type="button" data-nav="my-events">My Events</button>
+      <button type="button" data-nav="profile">Profile</button>
+    </nav>
+
+    <button class="header-action" type="button" data-nav="profile" aria-label="Open guest profile">
+      <span class="avatar" aria-hidden="true">G</span>
+      <span class="header-action-label">Guest</span>
+    </button>
+  </header>
+
+  <main id="app" tabindex="-1"></main>
+
+  <nav class="mobile-nav" aria-label="Mobile navigation">
+    <button type="button" data-nav="discover"><span aria-hidden="true">⌂</span>Discover</button>
+    <button type="button" data-nav="saved"><span aria-hidden="true">♡</span>Saved</button>
+    <button type="button" data-nav="my-events"><span aria-hidden="true">✓</span>My Events</button>
+    <button type="button" data-nav="profile"><span aria-hidden="true">○</span>Profile</button>
+  </nav>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+  <script src="app.js"></script>
+</body>
+</html>
